@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {Parent} from "./PropsStateExample/1/Parnet";
+import {GrandParent} from "./PropsStateExample/6/GrandParnet";
+import {UseEffectCallbackExample} from "./PropsStateExample/useEffectCallbackExample/useEffectCallbackExample";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // <UseEffectCallbackExample />
   <React.StrictMode>
-    <App />
+    <Parent/>
+    {/*<GrandParent />*/}
+    {/*<UseEffectCallbackExample />*/}
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
